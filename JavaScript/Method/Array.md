@@ -53,7 +53,76 @@ beta.concat(1, [2, 3]);
 
 <br>
 
+## Array.prototype.copyWithin()
++ 배열의 일부를 얕게 복사한 뒤, 동일한 배열의 다른 위치에 덮어쓰고 그 배열을 반환
++ 크기(배열의 길이)를 수정하지 않고 반환합니다.
 
+```
+const array1 = ['a', 'b', 'c', 'd', 'e'];
+
+console.log(array1.copyWithin(0, 3, 4));
+//["d", "b", "c", "d", "e"]
+
+console.log(array1.copyWithin(1, 3));
+//["d", "d", "e", "d", "e"]
+
+[1, 2, 3, 4, 5].copyWithin(-2);
+// [1, 2, 3, 1, 2]
+
+[1, 2, 3, 4, 5].copyWithin(0, 3);
+// [4, 5, 3, 4, 5]
+
+[1, 2, 3, 4, 5].copyWithin(0, 3, 4);
+// [4, 2, 3, 4, 5]
+
+[1, 2, 3, 4, 5].copyWithin(-2, -3, -1);
+// [1, 2, 3, 3, 4]
+```
+
+<br>
+
+## Array.prototype.entries()
++ 배열의 각 인덱스에 대한 키/값 쌍을 가지는 새로운 Array Iterator 객체를 반환.
+  - 이터레이터(Iterator)? => 반복 처리가 가능한 객체
+
+```
+const a = ["a", "b", "c"];
+
+for (const [index, element] of a.entries()) {
+  console.log(index, element);
+}
+
+// 0 'a'
+// 1 'b'
+// 2 'c'
+```
+```
+const array = ["a", "b", "c"];
+const arrayEntries = array.entries();
+
+for (const element of arrayEntries) {
+  console.log(element);
+}
+
+// [0, 'a']
+// [1, 'b']
+// [2, 'c']
+```
+
+<br>
+
+## Array.prototype.every()
++ 배열 안의 모든 요소가 주어진 판별 함수를 통과하는지 테스트를 함
++ Boolean 값을 반환합니다.
+
+```
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// true
+```
 
 <br>
 <br>
