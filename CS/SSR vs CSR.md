@@ -25,7 +25,7 @@ MPA !== SSR
 * 클라이언트 측에서 렌더링 하는 방식
 * react, vue, Angular...
 
-![ssrcsr](../img/SSRCSR1.JPG)
+![ssrcsr](../img/CS/SSRCSR1.JPG)
 
 * CSR은 브라우저가 JS 파일을 다운로드 받고 동적으로 DOM을 생성하는 시간을 기다려야 함으로 초기 로딩 속도가 느림.
 * 초기 로딩 이후 페이지 일부를 변경할 땐 서버에 해당 데이터만 요청하면 되므로 이후 구동 속도는 빠름
@@ -41,7 +41,7 @@ MPA !== SSR
 * 요청시 서버에서 즉시 HTML 을 만들어서 응답함(미리 만들어두기 어려운 페이지에 적합)
 * php, java...
 
-![ssrcsr](../img/SSRCSR2.JPG)
+![ssrcsr](../img/CS/SSRCSR2.JPG)
 
 * 모든 데이터가 이미 HTML에 담겨진 채로 브라우저에 전송되기 때문에 SEO 최적화에 유리함
 * Javascript 코드를 다운로드 받고 실행하기 전에 사용자가 화면을 미리 볼 수 있음 (초기 구동 속도 빠름)
