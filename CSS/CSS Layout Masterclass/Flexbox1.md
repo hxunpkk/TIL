@@ -13,7 +13,7 @@
 }
 ```
 
-![blockbox](../img/blockbox.JPG)
+![blockbox](../../img/blockbox.JPG)
 
 block 의 경우엔 옆에 다른 요소가 올 수 없고 다음 줄로 넘어감, width 와 height 의 지정이 가능하다.
 
@@ -28,7 +28,7 @@ block 의 경우엔 옆에 다른 요소가 올 수 없고 다음 줄로 넘어�
 }
 ```
 
-![inlinebox](../img/inlinebox.JPG)
+![inlinebox](../../img/inlinebox.JPG)
 
 inline 의 경우엔 바로 옆에 다른 요소가 올 수 있으나 width 와 height 의 지정이 불가하다.
 
@@ -43,7 +43,7 @@ inline 의 경우엔 바로 옆에 다른 요소가 올 수 있으나 width 와 
 }
 ```
 
-![inlineblockbox](../img/inlineblockbox.JPG)
+![inlineblockbox](../../img/inlineblockbox.JPG)
 
 inline-block 은 두가지의 특성을 합쳐 크기의 조정도 가능하고 바로 옆에 요소가 자리할 수도 있게 한다.
 
