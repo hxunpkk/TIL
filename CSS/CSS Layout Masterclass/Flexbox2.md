@@ -95,11 +95,26 @@ ex) align-items: center
 .box {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 ```
 
 ![flexbox4](../../img/CSS/flexbox4.JPG)
+
+<br>
+
+❗ 그러나 모든 justify-contents 들의 속성이 전부 align-items 에 반응하는 것은 아니다.
+
+space-between 이나 space-around 같은 속성들은 align-items 에서 사용할수 없다.
+
+<br>
+<br>
+
+그렇다면 이제 위에서 사용한 속성들을 flex-direction: column 에서 사용한다면 어떻게 될까?
+
+![axis2](../../img/CSS/axis2.png)
+
+위 그림처럼 수평축과 수직축이 서로 바뀌게 된다. 고로 위에서 사용한 속성들 역시 축의 기준이 수평 수직이 서로 바뀐 기준으로 정렬을 하게 된다.
 
 <br>
 <br>
