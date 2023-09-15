@@ -66,6 +66,64 @@ body {
 ```
 
 <br>
+
+## align-content
+
+* 다중 라인 flex 컨테이너 에서 라인의 정렬을 설정할 때 사용
+* 다중 라인이 아닐 경우엔 동작하지 않음
+* 교차 축을 가로지르는 방향에서 항목을 이동시킴
+
+#### 1. align-content: center
+
+![ac1](../../img/CSS/ac1.JPG)
+
+<br>
+
+#### 2. align-content: flex-start
+
+![ac2](../../img/CSS/ac2.JPG)
+
+<br>
+
+#### 31. align-content: flex-end
+
+![ac3](../../img/CSS/ac3.JPG)
+
+<br>
+
+#### 4. align-content: space-between
+
+![ac4](../../img/CSS/ac4.JPG)
+
+<br>
+
+#### 5. align-content: space-around
+
+![ac5](../../img/CSS/ac5.JPG)
+
+<br>
+
+#### 6. align-content: space-evenly
+
+![ac6](../../img/CSS/ac6.JPG)
+
+<br>
+
+## column-gap / row-gap
+
+* 다중 라인일때 행과 열의 갭을 따로 줄 수 있다.
+
+```
+body {
+  display: flex;
+  row-gap: 10px; // 수평
+  column-gap: 20px; // 수직
+}
+```
+
+![gap1](../../img/CSS/gap1.JPG)
+
+<br>
 <br>
 
 # Refer
