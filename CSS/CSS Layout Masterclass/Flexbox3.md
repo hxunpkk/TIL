@@ -124,6 +124,67 @@ body {
 ![gap1](../../img/CSS/gap1.JPG)
 
 <br>
+
+## Order / align-self
+
+```
+Flexbox는 대부분의 경우에는 Flex 부모에서 설정을 하지만, 
+자식에게 적용하는 속성들이 몇개 있기는 하다
+
+그 몇 안되는 속성중 두가지가 order, align-self 이다.
+```
+
+### Order
+* 자식 요소들의 순서를 지정해주는 속성
+* 기본 값은 0이다.
+
+```
+.box:nth-child(3) {
+  background-color: blueviolet;
+  order: 2;
+}
+
+.box:nth-child(6) {
+  background-color: aqua;
+  order: 1;
+}
+```
+
+![order1](../../img/CSS/order1.JPG)
+
+order 의 기본값은 0이므로, 기본 box 들이 0의 값으로 우선적으로 배치되고, 그리고 order 속성의 순차적으로 박스들이 배치된다.
+
+### 음수도 적용될까?
+
+```
+.box:nth-child(6) {
+  background-color: aqua;
+  order: -1;
+}
+```
+
+![order2](../../img/CSS/order2.JPG)
+
+음수 역시도 잘 적용되어 order 속성의 순차적으로 배치되는 모습을 볼 수 있다.
+
+<br>
+
+### align-self
+* flex 자식 항목에 주는 속성으로 교차축 정렬을 정할 수 있게 해줌
+
+```
+.box:nth-child(1) {
+  align-self: flex-start;
+}
+
+.box:nth-child(3){
+  align-self: flex-end;
+}
+```
+
+![aself1](../../img/CSS/aself1.JPG)
+
+<br>
 <br>
 
 # Refer
